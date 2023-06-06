@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>汪果</title>
+</head>
+<body>
+<div id="layout-content">
+<div id="toptitle">
+<h1>Wang Guo（汪果）</h1>
+</div>
+<table class="imgtable"><tr><td>
+<a href="https://waitfou.github.io/"><img src="picture/汪果证件照.jpg" alt="alt text" width="120px" /></a>&nbsp;</td>
+<td align="left"><p>硕士研究生<br />
+电子信息, 
+<a href="http://www.uestc.edu.cn/">电子科技大学</a>, <br />
+成都, 四川, 中国 <br />
+手机: +86 188 8410 3908  <br />
+邮箱: 202122280519@uestc.stu.edu.cn <br />
+<br />
+<a href="pdf/Aikun_Xu_CV.pdf">[我的简历]</a>
+  <a href="https://github.com/waitfou">[GitHub]<a href="EnHome.html">[English Page]</a></p>
+</td></tr></table>
+<h2>关于我</h2>
+<p>我目前在电子科技大学攻读硕士学位。
+本人已于2019年6月从黑龙江科技大学计算机学院获得软件工程学士学位。
+<p>我的研究兴趣主要包括: Java后端开发、分布式系统、机器学习等。</p>
+<h2>教育经历</h2>
+  
+<table class="imgtable"><tr><td>
+<a href="https://www.csu.edu.cn/"><img src="picture/UESTC.jpg" alt="电子科技大学" width="80px" /></a>&nbsp;</td>
+<td align="left"><h3>硕士 <a href="https://www.uestc.edu.cn/">电子科技大学</a> (2021.9 ~ 2024.6)</h3>
+<ul>
+<li><p><b>专业</b>: 电子信息</p>
+<li><p><b>绩点</b>: 3.62/4  <a href="pdf/汪果硕士成绩单.pdf">[中英文成绩单]</a></p>
+<li><p><b>奖励荣誉</b>: 电子科技大学研究生学业二等奖学金、优秀研究生 <br /></p>
+</li>
+</ul>
+</td></tr></table>
+
+<table class="imgtable"><tr><td>
+<a href="https://www.csu.edu.cn/"><img src="picture/USTH.jpg" alt="黑龙江科技大学" width="80px" /></a>&nbsp;</td>
+<td align="left"><h3>本科 <a href="http://www.usth.edu.cn/">黑龙江科技大学</a> (2015.9 ~ 2019.6)</h3>
+ <ul>
+<li><p><b>专业</b>: 软件工程</p>
+<li><p><b>均分</b>: 85/100  <b>核心专业课均分</b>：93/100 <!-- <a href="pdf/transcript_csu_ch.pdf">[中文成绩单]</a><a href="pdf/transcript_csu_en.pdf">[English Transcript]</a> --></p>
+<li><p><b>奖励荣誉</b>: 英语六级、国家励志奖学金(3次)、学业奖学金(3次）、科技竞赛奖(4项) <br /></p>
+</li>
+</ul>
+</td></tr></table>
+  
+<h2>项目经历</h2>
+
+<a href="https://github.com/waitfou/douyin-Mr-Wang"><b>仿抖音后端项目</b></a>
+<ul>
+<li><b>技术选型</b>： SpringBoot、MySQL、Redis、MongoDB、Nginx、Nacos 等<br />
+主要完成评论模块、粉丝模块、系统消息、用户验证、视频模块等
+</li>
+</ul>
+<p><a href="https://github.com/Waitfou/raft-kv-master"><b>基于 Raft 算法的 K-V 分布式存储实现</b></a><br />
+<ul>
+<li><b>技术选型</b>：Java、Rocks-DB、SOFA-BOlt、线程池、JUC、lombok、Slf4j<br />
+<li>本项目采用 Java 语言，严格按照 Raft 论文实现（实现了 Leader 选举、日志复制）。采用 slf4j 日志框架打印日志，采用 Rocks-DB 存储状态机中的 KV 日志，蚂蚁金服 SOFA-Bolt 框架用于不同节点 RPC
+通信等<br>
+<li>独立实现一致性算法模块、日志模块、选举模块等。并完成 Leader 选举投票、附加日志、处理客户端发送到集群中的请求，通过线程池管理线程等<br>
+<li>独立负责 Leader 选举模块，在服务器节点宕机/服务器集群启动等情况时完成 Leader 选举<br/>
+<li>独立负责日志复制模块，通过保证与 Leader 节点的强一致性，实现集群 Follower 节点中日志信息与Leader节点的同步<br />
+</li>
+</ul>
+</body>
+</html>
