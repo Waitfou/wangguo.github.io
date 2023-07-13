@@ -21,7 +21,7 @@
 手机: +86 188 8410 3908  <br />
 邮箱: 202122280519@uestc.stu.edu.cn <br />
 <br />
-<a href="pdf/汪果简历0703.pdf">[我的简历]</a>
+<a href="pdf/汪果简历0712.pdf">[我的简历]</a>
   <a href="https://github.com/waitfou">[GitHub]<a href="EnHome.html">[English Page]</a></p>
 </td></tr></table>
 <h2>关于我</h2>
@@ -36,7 +36,7 @@
 <ul>
 <li><p><b>专业</b>: 电子信息</p>
 <li><p><b>绩点</b>: 3.62/4  <a href="pdf/汪果硕士成绩单.pdf">[中英文成绩单]</a></p>
-<li><p><b>奖励荣誉</b>: 电子科技大学研究生学业二等奖学金、优秀研究生 <br /></p>
+<li><p><b>奖励荣誉</b>: 电子科技大学研究生学业二等奖学金(8000元奖金)、优秀研究生 <br /></p>
 </li>
 </ul>
 </td></tr></table>
@@ -47,7 +47,7 @@
  <ul>
 <li><p><b>专业</b>: 软件工程</p>
 <li><p><b>均分</b>: 85/100  <b>核心专业课均分</b>：93/100 <!-- <a href="pdf/transcript_csu_ch.pdf">[中文成绩单]</a><a href="pdf/transcript_csu_en.pdf">[English Transcript]</a> --></p>
-<li><p><b>奖励荣誉</b>: 英语六级、国家励志奖学金(3次)、校园学业奖学金(3次）、科技竞赛奖(4项) <br /></p>
+<li><p><b>奖励荣誉</b>: 英语六级、国家励志奖学金(3次，15000元)、校园学业奖学金(3次，1600元）、科技竞赛奖(4项+1000元奖金) <br /></p>
 </li>
 </ul>
 </td></tr></table>
@@ -56,23 +56,21 @@
 
 <a href="https://github.com/waitfou/douyin-Mr-Wang"><b>仿抖音后端项目</b></a>
 <ul>
-<li><b>技术选型</b>： SpringBoot、MySQL、Redis、MongoDB、Nginx、Nacos 等<br />
-<li>主要完成视频评论模块、粉丝模块、系统消息、用户验证、视频模块等。采用 Maven 对项目进行构建与管理，采用 Spring Boot 框架提升开发效率，利用 knife4j 进行后端接口管理
-借助 RabbitMQ 对重要数据与系统消息进行解耦，提高系统的可用性和效率
-<li>利用 Redis 完成粉丝数/关注数/点赞数等计数，缓存不必须马上存入数据库的数据（朋友关系/视频被点赞个数/token 会话信息/缓存验证码（并设置过期策略），同时设置阈值在达到阈值时将数据持久化
-到数据库
-<li>利用 Nacos 分布式配置中心对需要配置的参数提取出来，便于动态修改，同时利用 Idworker 实现分布式全局 id 生成。
-<li>完成了云端服务器的部署。接口测试链接：http://47.115.222.30:8099/doc.html
+<li><b>技术选型</b>： Java、SpringBoot、MySQL、Redis、MongoDB、Nacos 等<br />
+<li>主要完成视频评论模块、粉丝模块、系统消息、用户验证、视频模块等。采用 Maven 对项目进行构建与管理，采用 Spring Boot 框架提升开发效率，利用 knife4j 进行后端接口管理。<br/>
+<li>借助 RabbitMQ 对重要数据与系统消息进行解耦，提高系统的可用性和效率。<br/>
+<li>利用 Redis 完成粉丝数/关注数/点赞数等计数，缓存不必须马上存入数据库的数据（朋友关系/视频被点赞个数/token 会话信息/缓存验证码（并设置过期策略），同时设置阈值在达到阈值时将数据持久化到数据库。减轻了数据库的压力的同时，提升系统的效率和用户体验感。<br/>
+<li>利用 Nacos 分布式配置中心对需要配置的参数提取出来，便于动态修改，同时利用 Idworker 实现分布式全局 id 生成。<br/>
+<li>完成了云端服务器的部署。接口测试链接：http://47.115.222.30:8099/doc.html<br/>
 </li>
 </ul>
 <p><a href="https://github.com/Waitfou/raft-kv-master"><b>基于 Raft 算法的 K-V 分布式存储实现</b></a><br />
 <ul>
-<li><b>技术选型</b>：Java、Rocks-DB、SOFA-BOlt、线程池、JUC、lombok、Slf4j<br />
-<li>本项目采用 Java 语言，严格按照 Raft 论文实现（实现了 Leader 选举、日志复制）。采用 slf4j 日志框架打印日志，采用 Rocks-DB 存储状态机中的 KV 日志，蚂蚁金服 SOFA-Bolt 框架用于不同节点 RPC
-通信等<br>
-<li>独立实现一致性算法模块、日志模块、选举模块等。并完成 Leader 选举投票、附加日志、处理客户端发送到集群中的请求，通过线程池管理线程等<br>
-<li>独立负责 Leader 选举模块，在服务器节点宕机/服务器集群启动等情况时完成 Leader 选举<br/>
-<li>独立负责日志复制模块，通过保证与 Leader 节点的强一致性，实现集群 Follower 节点中日志信息与Leader节点的同步<br />
+<li><b>技术选型</b>：Java、Rocks-DB、SOFA-BOlt、线程池、JUC、lombok、Slf4j<br/>
+<li>本项目采用 Java 语言，实现了 Leader 选举、日志复制等。接收客户端 KV 值包装成日志存在服务器集群中，利用 JUC 控制并发，采用 Rocks-DB 存储状态机日志，SOFA-Bolt 用于节点 RPC 通信等。<br>
+<li>实现了一致性算法模块、日志模块、选举模块等。并完成 Leader 选举投票、附加日志、处理客户端发送到集群中的请求，通过线程池管理线程，便于定位线程相关的问题等。<br>
+<li>负责 Leader 选举模块，在服务器宕机/服务器集群启动情况时完成 Leader 选举，提高集群可用性。<br/>
+<li>负责日志复制模块，通过 Raft 共识算法保证与 Leader 节点的强一致性，实现集群 Follower 节点中日志信息与 Leader 节点的同步，提升了集群的可用性。<br />
 </li>
 </ul>
 <b>基于机器学习算法的车身点焊异常检测研究【与广汽本田合作横向项目】</b>
